@@ -1,5 +1,5 @@
 ﻿using Sistema.Vendas.Domain.Exceptions;
-using DomainEntity = Sistema.Vendas.Domain.Entity.Product;
+using DomainContext = Sistema.Vendas.Domain.ProductContext;
 
 namespace Tests._3_Domain.Entity;
 
@@ -20,7 +20,7 @@ public class ProductTest
 
         var datetimeBefore = DateTime.Now;
 
-        var product = new DomainEntity.Product(validData.Name, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
+        var product = new DomainContext.Product(validData.Name, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var datetimeAfter = DateTime.Now;
 
@@ -52,7 +52,7 @@ public class ProductTest
         };
 
         Action action =
-            () => new DomainEntity.Product(name!, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
+            () => new DomainContext.Product(name!, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var exception = Assert.Throws<EntityValidationException>(action);
         Assert.Equal("Name should not be empty or null", exception.Message);
@@ -75,7 +75,7 @@ public class ProductTest
         };
 
         Action action =
-            () => new DomainEntity.Product(validData.Name, description!, validData.Quantity, validData.Price, validData.LinkPhoto);
+            () => new DomainContext.Product(validData.Name, description!, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var exception = Assert.Throws<EntityValidationException>(action);
         Assert.Equal("Description should not be empty or null", exception.Message);
@@ -95,7 +95,7 @@ public class ProductTest
         };
 
         Action action =
-            () => new DomainEntity.Product(validData.Name, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
+            () => new DomainContext.Product(validData.Name, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var exception = Assert.Throws<EntityValidationException>(action);
         Assert.Equal("Quantity should not be less to 0", exception.Message);
@@ -115,7 +115,7 @@ public class ProductTest
         };
 
         Action action =
-            () => new DomainEntity.Product(validData.Name, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
+            () => new DomainContext.Product(validData.Name, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var exception = Assert.Throws<EntityValidationException>(action);
         Assert.Equal("Price should not be less to 0.00", exception.Message);
@@ -137,7 +137,7 @@ public class ProductTest
         };
 
         Action action =
-            () => new DomainEntity.Product(name!, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
+            () => new DomainContext.Product(name!, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var exception = Assert.Throws<EntityValidationException>(action);
         Assert.Equal("Name should be at leats 3 caracters long", exception.Message);
@@ -158,7 +158,7 @@ public class ProductTest
         };
 
         Action action =
-            () => new DomainEntity.Product(nameInvalid!, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
+            () => new DomainContext.Product(nameInvalid!, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var expection = Assert.Throws<EntityValidationException>(action);
         Assert.Equal("Name should be less or equals 255 caracters long", expection.Message);
@@ -179,7 +179,7 @@ public class ProductTest
         };
 
         Action action =
-            () => new DomainEntity.Product(validData.Name, descriptionInvalid, validData.Quantity, validData.Price, validData.LinkPhoto);
+            () => new DomainContext.Product(validData.Name, descriptionInvalid, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var expection = Assert.Throws<EntityValidationException>(action);
         Assert.Equal("Description should be less or equals 255 caracters long", expection.Message);
@@ -198,7 +198,7 @@ public class ProductTest
             LinkPhoto = "link_to_photo"
         };
 
-        var product = new DomainEntity.Product(validData.Name, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
+        var product = new DomainContext.Product(validData.Name, validData.Description, validData.Quantity, validData.Price, validData.LinkPhoto);
 
         var updatePoduct = new
         {

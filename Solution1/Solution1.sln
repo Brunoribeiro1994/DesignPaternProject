@@ -15,9 +15,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6DA06D82
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F3380A0-443B-4C31-A5BF-8496B156C6A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests\Tests.csproj", "{8FC9CA9D-7142-4875-AB0D-E7C665D34D6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests\Tests.csproj", "{8FC9CA9D-7142-4875-AB0D-E7C665D34D6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema.Vendas.Domain", "Sistema.Vendas.Domain\Sistema.Vendas.Domain.csproj", "{8FD3AC81-353A-40BF-9E90-D3FAA0FEC538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sistema.Vendas.Domain", "Sistema.Vendas.Domain\Sistema.Vendas.Domain.csproj", "{8FD3AC81-353A-40BF-9E90-D3FAA0FEC538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Infra.Mysql", "DDD.Infra.Mysql\DDD.Infra.Mysql.csproj", "{047ADBB0-3CDF-445D-94E9-0153DA92A04B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{13F98767-BAFF-4F3C-AEB9-9D253BDE7AF2}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mysql", "Mysql", "{6A83DA60-D2F0-4CE9-A919-344246E83338}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +42,10 @@ Global
 		{8FD3AC81-353A-40BF-9E90-D3FAA0FEC538}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FD3AC81-353A-40BF-9E90-D3FAA0FEC538}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FD3AC81-353A-40BF-9E90-D3FAA0FEC538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{047ADBB0-3CDF-445D-94E9-0153DA92A04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047ADBB0-3CDF-445D-94E9-0153DA92A04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047ADBB0-3CDF-445D-94E9-0153DA92A04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047ADBB0-3CDF-445D-94E9-0153DA92A04B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +57,8 @@ Global
 		{76C99A89-3382-438A-95D3-1BA9263D71EB} = {3F3380A0-443B-4C31-A5BF-8496B156C6A8}
 		{8FC9CA9D-7142-4875-AB0D-E7C665D34D6C} = {6DA06D82-45BB-44C6-9A07-A854C042C6EB}
 		{8FD3AC81-353A-40BF-9E90-D3FAA0FEC538} = {0B5D216A-8AD1-4031-B71E-33E1BB4154A2}
+		{047ADBB0-3CDF-445D-94E9-0153DA92A04B} = {76C99A89-3382-438A-95D3-1BA9263D71EB}
+		{6A83DA60-D2F0-4CE9-A919-344246E83338} = {13F98767-BAFF-4F3C-AEB9-9D253BDE7AF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92AC41F2-7F05-4794-93AC-E20DB525DCE7}
