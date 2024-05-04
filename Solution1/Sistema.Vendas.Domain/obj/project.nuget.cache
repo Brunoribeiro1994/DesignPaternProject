@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z9D3DMRSGrwYHs5R2khateXeObCmNmHVGOiNRXC1iVSe48wjrK/wJkB8qPE2XLlj6F7SxbUJvzTqHXYsDLy5eA==",
+  "dgSpecHash": "qXBnOjh2q6zaT0NlX1+U+Jy/uVlBOmsAjtT76UHbuWwZdDB2hybVvmBf1PlsGivbgJrx6vtEBkxIslAunDciuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruno\\source\\ProjetosPos\\DesignPaternProject\\Solution1\\Sistema.Vendas.Domain\\Sistema.Vendas.Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\DesignPaternProject\\Solution1\\Sistema.Vendas.Domain\\Sistema.Vendas.Domain.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

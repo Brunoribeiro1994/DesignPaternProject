@@ -1,17 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DDD.Infra.Mysql.Model
 {
     [Table("Product")]
     public class ProductModel
     {
+        public ProductModel(Guid id, string name, string description, int quantity, decimal price, string linkPhoto, DateTime createdAt)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+            Quantity = quantity;
+            Price = price;
+            LinkPhoto = linkPhoto;
+            CreatedAt = createdAt;
+        }
+
         [Key]
         [Column("id")]
         public Guid Id { get; private set; }
