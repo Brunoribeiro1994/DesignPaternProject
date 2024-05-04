@@ -21,3 +21,15 @@ C:\Users\Bruno\source\ProjetosPos\DesignPaternProject\Solution1\Sistema.Vendas.D
 C:\Users\Bruno\source\ProjetosPos\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\refint\Sistema.Vendas.Domain.dll
 C:\Users\Bruno\source\ProjetosPos\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\Sistema.Vendas.Domain.pdb
 C:\Users\Bruno\source\ProjetosPos\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\ref\Sistema.Vendas.Domain.dll
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\bin\Debug\net6.0\Sistema.Vendas.Domain.deps.json
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\bin\Debug\net6.0\Sistema.Vendas.Domain.dll
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\bin\Debug\net6.0\Sistema.Vendas.Domain.pdb
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\Sistema.Vendas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\Sistema.Vendas.Domain.AssemblyInfoInputs.cache
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\Sistema.Vendas.Domain.AssemblyInfo.cs
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\Sistema.Vendas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\Sistema.Vendas.Domain.sourcelink.json
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\Sistema.Vendas.Domain.dll
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\refint\Sistema.Vendas.Domain.dll
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\Sistema.Vendas.Domain.pdb
+C:\Users\marco\source\repos\chsoiuvhoifuspvghpfhgiusp\DesignPaternProject\Solution1\Sistema.Vendas.Domain\obj\Debug\net6.0\ref\Sistema.Vendas.Domain.dll

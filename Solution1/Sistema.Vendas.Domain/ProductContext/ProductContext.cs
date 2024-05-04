@@ -8,7 +8,7 @@ using Sistema.Vendas.Domain.Exceptions;
 namespace Sistema.Vendas.Domain.ProductContext
 {
 
-    public class Product
+    public class ProductContext
     {
         public Guid Id { get; private set; }
         public string Name { get; private set; }
@@ -18,7 +18,7 @@ namespace Sistema.Vendas.Domain.ProductContext
         public string LinkPhoto { get; private set; }
         public DateTime CreatedAt { get; private set; }
 
-        public Product(string name, string description, int quantity, decimal price, string linkPhoto)
+        public ProductContext(string name, string description, int quantity, decimal price, string linkPhoto)
         {
             Id = Guid.NewGuid();
             Name = name;
