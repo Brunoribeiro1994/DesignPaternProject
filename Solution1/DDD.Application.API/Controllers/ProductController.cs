@@ -30,7 +30,54 @@ namespace DDD.Applicattion.API.Controllers
             var data = new ProductModel(product.Id, product.Name, product.Description, product.Quantity, product.Price, product.LinkPhoto, product.CreatedAt);
             _productRepository.Create(data);
 
-            return Ok("Aluno atualizado com sucesso");
+            return Ok("Produto atualizado com sucesso");
+        }
+
+        [HttpPut]
+        public ActionResult Put([FromBody] ProductModel model)
+        {
+            var product = new ProductContext(model.Name, model.Description, model.Quantity, model.Price, model.LinkPhoto);
+            var data = new ProductModel(product.Id, product.Name, product.Description, product.Quantity, product.Price, product.LinkPhoto, product.CreatedAt);
+            try
+            {
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                _productRepository.Update(data);
+                return Ok("Produto atualizado com sucesso");
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
+        [HttpDelete]
+        public ActionResult Delete([FromBody] ProductModel model)
+        {
+            var product = new ProductContext(model.Name, model.Description, model.Quantity, model.Price, model.LinkPhoto);
+            var data = new ProductModel(product.Id, product.Name, product.Description, product.Quantity, product.Price, product.LinkPhoto, product.CreatedAt);
+            try
+            {
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                _productRepository.Delete(data);
+                return Ok("Produto Deletado com sucesso");
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
         }
     }
 }
