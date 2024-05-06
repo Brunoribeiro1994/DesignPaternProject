@@ -23,7 +23,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<MysqlServerContext, MysqlServerContext>();
 builder.Services.AddScoped<IRepository<ProductModel>, ProductRepository>();
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

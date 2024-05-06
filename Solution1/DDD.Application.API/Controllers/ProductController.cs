@@ -2,7 +2,7 @@
 using DDD.Infra.Mysql.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Sistema.Vendas.Domain.ProductContext;
-using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DDD.Applicattion.API.Controllers
 {
@@ -23,6 +23,12 @@ namespace DDD.Applicattion.API.Controllers
             return _productRepository.List();
         }
 
+        [HttpGet("{id}")]
+        public ActionResult<ProductModel?> Index(Guid id)
+        {
+            return _productRepository.GetProduct(id);
+        }
+
         [HttpPost]
         public ActionResult Create([FromBody] ProductModel model)
         {
@@ -30,7 +36,43 @@ namespace DDD.Applicattion.API.Controllers
             var data = new ProductModel(product.Id, product.Name, product.Description, product.Quantity, product.Price, product.LinkPhoto, product.CreatedAt);
             _productRepository.Create(data);
 
-            return Ok("Aluno atualizado com sucesso");
+            return Ok("Produto Criado com sucesso");
+        }
+
+        [HttpPut]
+        public ActionResult Put([FromBody] ProductModel model)
+        {
+            var product = _productRepository.GetProduct(model.Id);
+            if (product == null)
+                return NotFound();
+
+            var productUpdate = ConverteModelToEntity(product);
+            productUpdate.Update(model.Name, model.Description,model.Quantity, model.Price, model.LinkPhoto);
+
+            var data = new ProductModel(
+                model.Id, productUpdate.Name, productUpdate.Description, productUpdate.Quantity, productUpdate.Price, productUpdate.LinkPhoto, product.CreatedAt);
+            
+            if (data == null)
+                return NotFound();
+
+            _productRepository.Update(data);
+            return Ok("Produto atualizado com sucesso");
+        }
+
+        [HttpDelete]
+        public ActionResult Delete([FromBody] ProductModel model)
+        {
+            var product = _productRepository.GetProduct(model.Id);
+            if (product == null)
+                return NotFound();
+
+            _productRepository.Delete(product);
+            return Ok("Produto Deletado com sucesso");
+        }
+
+        private ProductContext ConverteModelToEntity(ProductModel productModel)
+        {
+            return new ProductContext(productModel.Name, productModel.Description, productModel.Quantity, productModel.Price, productModel.LinkPhoto);
         }
     }
 }

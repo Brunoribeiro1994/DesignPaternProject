@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{237C3CC8-37A5-47B5-8565-F4C59F43DD00}|DDD.Application.API\\DDD.Application.API.csproj|solutionrelative:ddd.application.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{237C3CC8-37A5-47B5-8565-F4C59F43DD00}|DDD.Application.API\\DDD.Application.API.csproj|c:\\users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\designpaternproject\\solution1\\ddd.application.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{237C3CC8-37A5-47B5-8565-F4C59F43DD00}|DDD.Application.API\\DDD.Application.API.csproj|solutionrelative:ddd.application.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{047ADBB0-3CDF-445D-94E9-0153DA92A04B}|DDD.Infra.Mysql\\DDD.Infra.Mysql.csproj|c:\\users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\designpaternproject\\solution1\\ddd.infra.mysql\\model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{047ADBB0-3CDF-445D-94E9-0153DA92A04B}|DDD.Infra.Mysql\\DDD.Infra.Mysql.csproj|solutionrelative:ddd.infra.mysql\\model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{047ADBB0-3CDF-445D-94E9-0153DA92A04B}|DDD.Infra.Mysql\\DDD.Infra.Mysql.csproj|c:\\users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\designpaternproject\\solution1\\ddd.infra.mysql\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{047ADBB0-3CDF-445D-94E9-0153DA92A04B}|DDD.Infra.Mysql\\DDD.Infra.Mysql.csproj|solutionrelative:ddd.infra.mysql\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductModel.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\DesignPaternProject\\Solution1\\DDD.Infra.Mysql\\Model\\ProductModel.cs",
-              "RelativeDocumentMoniker": "DDD.Infra.Mysql\\Model\\ProductModel.cs",
-              "ToolTip": "C:\\Users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\DesignPaternProject\\Solution1\\DDD.Infra.Mysql\\Model\\ProductModel.cs",
-              "RelativeToolTip": "DDD.Infra.Mysql\\Model\\ProductModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAzAAAA",
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\DesignPaternProject\\Solution1\\DDD.Infra.Mysql\\Repositories\\Product\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "DDD.Infra.Mysql\\Repositories\\Product\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\DesignPaternProject\\Solution1\\DDD.Infra.Mysql\\Repositories\\Product\\ProductRepository.cs",
+              "RelativeToolTip": "DDD.Infra.Mysql\\Repositories\\Product\\ProductRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwCsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T01:20:51.586Z",
+              "WhenOpened": "2024-05-06T23:43:35.321Z",
               "EditorCaption": ""
             },
             {
@@ -49,22 +45,9 @@
               "RelativeDocumentMoniker": "DDD.Application.API\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\DesignPaternProject\\Solution1\\DDD.Application.API\\Controllers\\ProductController.cs",
               "RelativeToolTip": "DDD.Application.API\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAcwBkAAAAEAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAA8wDkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T01:09:13.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\DesignPaternProject\\Solution1\\DDD.Application.API\\Program.cs",
-              "RelativeDocumentMoniker": "DDD.Application.API\\Program.cs",
-              "ToolTip": "C:\\Users\\marco\\source\\repos\\chsoiuvhoifuspvghpfhgiusp\\DesignPaternProject\\Solution1\\DDD.Application.API\\Program.cs",
-              "RelativeToolTip": "DDD.Application.API\\Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAABIAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T01:08:31.613Z",
+              "WhenOpened": "2024-05-06T23:31:37.725Z",
               "EditorCaption": ""
             }
           ]

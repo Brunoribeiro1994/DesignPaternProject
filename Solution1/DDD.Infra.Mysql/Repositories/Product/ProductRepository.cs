@@ -1,4 +1,5 @@
 ﻿using DDD.Infra.Mysql.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace DDD.Infra.Mysql.Repositories.Product;
 
@@ -39,7 +40,7 @@ public class ProductRepository : IRepository<ProductModel>
     {
         try
         {
-            _context.Set<ProductModel>().Update(data);
+            _context.Set<ProductModel>().Attach(data);
             _context.SaveChanges();
         }
         catch (Exception ex)
@@ -51,5 +52,6 @@ public class ProductRepository : IRepository<ProductModel>
     public void Delete(ProductModel data)
     {
         _context.Set<ProductModel>().Remove(data);
+        _context.SaveChanges();
     }
 }
