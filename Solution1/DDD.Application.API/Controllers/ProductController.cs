@@ -42,21 +42,29 @@ namespace DDD.Applicattion.API.Controllers
         [HttpPut]
         public ActionResult Put([FromBody] ProductModel model)
         {
-            var product = _productRepository.GetProduct(model.Id);
-            if (product == null)
-                return NotFound();
+            try
+            {
+                var productUpdate = ConverteModelToEntity(model);
+                productUpdate.Update(model.Name, model.Description, model.Quantity, model.Price, model.LinkPhoto);
 
-            var productUpdate = ConverteModelToEntity(product);
-            productUpdate.Update(model.Name, model.Description,model.Quantity, model.Price, model.LinkPhoto);
+                var data = new ProductModel(
+                    model.Id,
+                    model.Name,
+                    model.Description,
+                    model.Quantity,
+                    model.Price,
+                    model.LinkPhoto,
+                    model.CreatedAt);
 
-            var data = new ProductModel(
-                model.Id, productUpdate.Name, productUpdate.Description, productUpdate.Quantity, productUpdate.Price, productUpdate.LinkPhoto, product.CreatedAt);
-            
-            if (data == null)
-                return NotFound();
+                if (data == null)
+                    return NotFound();
 
-            _productRepository.Update(data);
-            return Ok("Produto atualizado com sucesso");
+                _productRepository.Update(data);
+                return Ok("Produto atualizado com sucesso");
+            } catch (Exception ex)
+            {
+                return NotFound(); 
+            }
         }
 
         [HttpDelete]

@@ -19,7 +19,7 @@ namespace DDD.Infra.Mysql.Model
 
         [Key]
         [Column("id")]
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
         [Column("product_name")]
         [Required]
         [StringLength(50)]

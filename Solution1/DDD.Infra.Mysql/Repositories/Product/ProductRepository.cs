@@ -20,8 +20,10 @@ public class ProductRepository : IRepository<ProductModel>
     public ProductModel? GetProduct(Guid id)
     {
 
-        return _context.Set<ProductModel>()
-            .FirstOrDefault(p => p.Id == id);
+        var product = _context.Set<ProductModel>()
+            .Find(id);
+
+        return product;
     }
 
     public void Create(ProductModel data)
@@ -40,7 +42,7 @@ public class ProductRepository : IRepository<ProductModel>
     {
         try
         {
-            _context.Set<ProductModel>().Attach(data);
+            _context.Products.Update(data);
             _context.SaveChanges();
         }
         catch (Exception ex)
